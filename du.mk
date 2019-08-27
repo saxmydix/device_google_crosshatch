@@ -22,7 +22,7 @@
 #
 
 # Include DU common configuration
-include vendor/aosip/config/common_full_phone.mk
+include vendor/du/config/common_full_phone.mk
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/google/crosshatch/aosp_crosshatch.mk)
@@ -31,7 +31,7 @@ $(call inherit-product, device/google/crosshatch/aosp_crosshatch.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
-PRODUCT_NAME := aosip_crosshatch
+PRODUCT_NAME := du_crosshatch
 PRODUCT_DEVICE := crosshatch
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel 3 XL
@@ -39,7 +39,7 @@ PRODUCT_MANUFACTURER := Google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=crosshatch \
-    BUILD_FINGERPRINT=google/crosshatch/crosshatch:9/PQ3A.190801.002/5670241:user/release-keys
+    BUILD_FINGERPRINT=google/crosshatch/crosshatch:9/PQ3A.190801.002/5670241:user/release-keys \
     PRIVATE_BUILD_DESC="crosshatch-user 9 PQ3A.190801.002 5670241 release-keys"
 
 $(call inherit-product-if-exists, vendor/google/crosshatch/crosshatch-vendor.mk)
