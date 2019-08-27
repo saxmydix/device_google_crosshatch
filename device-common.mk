@@ -112,8 +112,7 @@ PRODUCT_PACKAGES += \
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext \
-    ims-ext-common \
-    qti-telephony-common
+    ims-ext-common 
 
  PRODUCT_BOOT_JARS += \
     telephony-ext
